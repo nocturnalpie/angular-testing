@@ -5,9 +5,6 @@
 // so that they can be run headlessly by a build agent
 // https://medium.com/@metalex9/replace-phantomjs-with-headless-chromium-for-javascript-unit-testing-in-karma-59812e6f8ce4
 
-const puppeteer = require('puppeteer');
-process.env.CHROME_BIN = puppeteer.executablePath();
-
 module.exports = function (config) {
   config.set({
     basePath: '',
