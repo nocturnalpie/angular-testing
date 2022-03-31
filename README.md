@@ -8,4 +8,4 @@ The different sections can be found below and each one has a md file with a bit 
 - [HTTP requests](src/app/http-requests/Testing%20http%20requests.md)
 - [waitForAsync](src/app/waitForAsync/waitForAsync.md)
 
-Feel free to edit the code and have a play around, once you save it will fork the repo and save your own version to stackblitz.
+Feel free to edit the code and have a play around, once you save it will fork the repo and save your own version to stackblitz. Just remember that if you save your own version you won't get any further updates unless you go back to [the original](https://stackblitz.com/github/nocturnalpie/angular-testing)
