@@ -2,12 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
-import { usersEndpoint } from './api-endpoints';
+import { usersEndpoint } from '../api-endpoints';
 
-@Injectable({
-	providedIn: 'root'
-})
-export class HttpRequestsService {
+@Injectable()
+export class UserService {
 
 	constructor(private httpClient: HttpClient) { }
 

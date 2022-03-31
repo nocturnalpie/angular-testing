@@ -1,21 +1,21 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed, waitForAsync } from '@angular/core/testing';
-import { usersEndpoint } from './api-endpoints';
-import { HttpRequestsModule } from './http-requests.module';
-import { HttpRequestsService } from './http-requests.service';
+import { usersEndpoint } from '../api-endpoints';
+import { UserModule } from '../mocking-and-spying/user/user.module';
+import { UserService } from './user.service';
 
-describe('HttpRequestsService', () => {
-	let service: HttpRequestsService;
+describe('UserService', () => {
+	let service: UserService;
 	let httpTestingController: HttpTestingController;
 
 	beforeEach(() => {
 		TestBed.configureTestingModule({
 			imports: [
-				HttpRequestsModule,
+				UserModule,
 				HttpClientTestingModule,
 			]
 		});
-		service = TestBed.inject(HttpRequestsService);
+		service = TestBed.inject(UserService);
 		httpTestingController = TestBed.inject(HttpTestingController);
 	});
 
