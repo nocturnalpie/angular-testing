@@ -1,7 +1,7 @@
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { TestBed, waitForAsync } from '@angular/core/testing';
 import { usersEndpoint } from '../api-endpoints';
-import { UserModule } from '../mocking-and-spying/user/user.module';
+import { UserModule } from '../mocking-and-spying/user.module';
 import { UserService } from './user.service';
 
 describe('UserService', () => {
@@ -47,6 +47,7 @@ describe('UserService', () => {
 		}));
 	});
 
+	// Don't forget to include this so that any extra calls that weren't expected are caught
 	afterEach(() => {
 		httpTestingController.verify();
 	});
