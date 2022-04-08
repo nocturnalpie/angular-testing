@@ -18,8 +18,8 @@ describe('UserComponent with Mock UserService', () => {
 		 *  don't affect the other tests. */
 		mockUserService = jasmine.createSpyObj<UserService>(
 			{ getAllUsers: of(fakeUsers) }
-			/*, { property1: 1, property2: 2 }*/
-		); // <-- You can also pass in properties here
+			//, { property1: 1, property2: 2 }   <-- You can also pass in properties here
+		);
 
 		/** You may also this this written with the class as the first parameter but we prefer
 		 *  the first method as it helps with renaming and intellisense etc */
