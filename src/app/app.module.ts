@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserModule } from './mocking-and-spying/user.module';
+import { RoutingExampleModule } from './routing/routing-example.module';
 
 @NgModule({
 	declarations: [
@@ -13,7 +14,8 @@ import { UserModule } from './mocking-and-spying/user.module';
 		BrowserModule,
 		AppRoutingModule,
 		BrowserAnimationsModule,
-		UserModule
+		UserModule,
+		RoutingExampleModule
 	],
 	bootstrap: [AppComponent]
 })
