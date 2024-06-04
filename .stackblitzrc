@@ -1,6 +1,6 @@
 {
   "installDependencies": true,
-  "startCommand": "turbo test",
+  "startCommand": "ng test",
   "env": {
     "ENABLE_CJS_IMPORTS": true
   }
